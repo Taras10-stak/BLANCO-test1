@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./img/ico.png">
+   <link rel="stylesheet" href="style.css">
+   <title>Product-Page</title>
+
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css'
+      integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=='
+      crossorigin='anonymous' />
+
+   <!-- jquery -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js'
+      integrity='sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=='
+      crossorigin='anonymous'></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+   <!-- Cart  -->
+
+
+   <div class="goodsPopup">
+      <div class="goodsPopupContainer">
+         
+      </div>
+      <button id="closePopup">Close</button>
+   </div>
+
+
+   <!-- Box  -->
+
+   <div class="cart">
+      <h2>Корзина</h2>
+      <div class="cartContainer"></div>
+      <h3 class="totalPrice">1000</h3>
+      <button>Оформити замовлення</button>
+   </div>
+
+
+
+
+   <!-- Header  -->
+   <div id="page" class="page-single">
+      <header>
+         <div class="pre-header">
+            <p class="pre-name">Made in UKRAINE</p>
+         </div>
+         <div class="inner-header">
+            <div class="container wide">
+               <div class="wrap">
+                  <div class="header-left">
+                     <div class="menu-bar">
+                        <a href="#0" class="menu-trigger" trigger-button data-target="mobile-menu"><i
+                              class="fa-solid fa-bars"></i><img class="logo-mobile" src="img/logo-new.png"
+                              alt="logo"></a>
+
+                     </div>
+                     <div class="list-inline">
+                        <ul>
+                           <div class="logo"><a href=""><img src="img/logo-new.png" alt="logo"></a></div>
+
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="header-center">
+                     <nav class="menu">
+                        <ul>
+                           <li><a href=""><span>HOME</span></a></li>
+                           <li><a href="">
+                                 <span>КАТАЛОГ</span>
+                                 <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="sub-mega">
+                                 <li>
+                                    <div class="container">
+                                       <div class="wrapper">
+                                          <div class="mega-content">
+                                             <div class="dotgrid">
+                                                <div class="wrapper">
+
+                                                   <!-- Секція прибрана  -->
+
+                                                </div>
+                                             </div>
+                                             <div class="links">
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">КОСТЮМИ:</h3>
+                                                   <ul>
+                                                      <li><a href="#">Флісовий костюм</a></li>
+                                                      <li><a href="#">Костюм зіп-світшот</a></li>
+                                                      <li><a href="#">Костюм зіп-світшот на флісі</a></li>
+                                                      <li><a href="#">Костюм з худі</a></li>
+                                                      <li><a href="#">Костюм худі на флісі</a></li>
+                                                      <li><a href="#">Костюм зі світшотом</a></li>
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">ХУДІ:</h3>
+                                                   <ul>
+                                                      <li><a href="#">Худі</a></li>
+                                                      <li><a href="#">Худі на флісі</a></li>
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">СВІТШОТИ:</h3>
+                                                   <ul>
+                                                      <li><a href="#">Світшот</a></li>
+                                                      <li><a href="#">Світшот на флісі</a></li>
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">ДЖОГЕРИ:</h3>
+                                                   <ul>
+                                                      <li><a href="#">Джогери</a></li>
+                                                      <li><a href="#">Джогери на флісі</a></li>
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">ФУТБОЛКИ:</h3>
+                                                   <ul>
+                                                      <li><a href="#">Однотонні</a></li>
+                                                      <li><a href="#">Патріотичні з принтом</a></li>
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">ШОРТИ</h3>
+                                                   <ul>
+
+                                                   </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                   <h3 class="dot-title">ТОПИ</h3>
+                                                   <ul>
+
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                        <ul>
+                           <li><a href=""><span>ПОКУПЦЯМ</span>
+                                 <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="sub-menu list-block">
+                                 <li><a href="">Про нас</a></li>
+                                 <li><a href="">Контакти</a></li>
+                                 <li><a href="">Доставка та оплата</a></li>
+                                 <li><a href="">Повернення та обмін</a></li>
+                              </ul>
+                           </li>
+                           <li><a href=""><span>SALE</span></a></li>
+                        </ul>
+                     </nav>
+                     <div class="branding"><a href="">BLANCO</a></div>
+                  </div>
+                  <div class="header-right">
+                     <div class="list-inline">
+                        <ul>
+                           <li><a href="#0" trigger-button data-target="search-float"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></li>
+                           <li><a href="#0"><i class="fa-regular fa-heart"></i></i><span
+                                    class="item-floating">7</span></a></li>
+                           <li><a href="#0" ><span
+                                    class="item-floating">10</span><i class="fa-solid fa-bag-shopping"
+                                    id="cart"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="wrap">
+                  <div class="breadcrumb list-inline">
+                     <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Sweater</a></li>
+                        <li><span>The Sweater in Tosca</span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div id="search-float" class="search-float">
+               <div class="container wide">
+                  <form action="" class="search">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="search" class="input" id="" placeholder="Search products">
+                     <i class="fa-solid fa-xmark" close-button></i>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </header>
+
+
+      <main>
+         <div class="section">
+            <div class="container">
+               <div class="wrap">
+                  <div class="product dotgrid">
+                     <div class="wrapper">
+                        <div class="image">
+                           <div class="outer-main">
+                              <div class="main-image swiper">
+                                 <div class="wrap swiper-wrapper">
+                                    <div class="item swiper-slide"><img src="img/assets/product_01.jpg" alt=""></div>
+                                    <div class="item swiper-slide"><img src="img/assets/product_01b.jpg" alt=""></div>
+                                    <div class="item swiper-slide"><img src="img/assets/product_06.jpg" alt=""></div>
+                                    <div class="item swiper-slide"><img src="img/assets/product_06b.jpg" alt=""></div>
+                                    <div class="item swiper-slide"><img src="img/assets/product_02.jpg" alt=""></div>
+                                    <div class="item swiper-slide"><img src="img/assets/product_02b.jpg" alt=""></div>
+                                 </div>
+                              </div>
+                              <div class="custom-pagination">
+                                 <div class="swiper-pagination"></div>
+                              </div>
+                           </div>
+                           <div class="outer-thumb ob-cover">
+                              <div class="thumbnail-image swiper">
+                                 <div class="wrap swiper-wrapper">
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_01.jpg" alt=""></div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_01b.jpg" alt=""></div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_06.jpg" alt=""></div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_06b.jpg" alt=""></div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_02.jpg" alt=""></div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                       <div class="thumb-wrap"><img src="img/assets/product_02b.jpg" alt=""></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="summary">
+                           <div class="entry">
+                              <h1 class="title">The Sweater in Tosca</h1>
+                              <div class="product-group">
+                                 <div class="product-price">
+                                    <span class="current">$45.00</span>
+                                    <div class="wrap">
+                                       <span class="before">$62.00</span>
+                                       <span class="discount">-25%</span>
+                                    </div>
+                                 </div>
+
+                              </div>
+                              <div class="product-color">
+                                 <span>Colors:</span>
+                                 <div class="wrap">
+                                    <button class="tosca selected"></button>
+                                    <button class="brown"></button>
+                                    <button class="ocean"></button>
+                                 </div>
+                              </div>
+                              <div class="product-size">
+                                 <span>Size:</span>
+                                 <div class="wrap">
+                                    <button disabled>S</button>
+                                    <button>M</button>
+                                    <button class="selected">L</button>
+                                    <button>XL</button>
+                                 </div>
+                              </div>
+
+                              <div class="product-action">
+                                 <div class="qty">
+                                    <button class="decrease">-</button>
+                                    <input type="text" value="1">
+                                    <button class="decrease">+</button>
+                                 </div>
+                                 <div class="buynow button">
+                                    <button type="submit" class="primary-btn">Add to cart</button>
+                                 </div>
+                                 <div class="buynow button">
+                                    <button type="submit" class="secondary-btn">Buy Now</button>
+                                 </div>
+                              </div>
+
+                              <div class="shipping">
+                                 <ul>
+                                    <li></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="product detail">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+
+      <!-- Footer -->
+
+      <footer>
+         <div class="inner-footer">
+            <div class="container">
+               <div class="wrap">
+                  <div class="top">
+
+                     <div class="list-block">
+                        <h3 class="dot-title">ПРО НАС</h3>
+
+                     </div>
+                     <div class="list-block">
+                        <h3 class="dot-title">КОНТАКТИ</h3>
+
+                     </div>
+                     <div class="list-block">
+                        <h3 class="dot-title">ДОСТАВКА ТА ОПЛАТА</h3>
+
+                     </div>
+                     <div class="list-block">
+                        <h3 class="dot-title">ПОВЕРНЕННЯ ТА ОБМІН</h3>
+
+                     </div>
+
+
+                  </div>
+
+                  <div class="button footer-brend">
+                     <div class="list-inline">
+                        <ul>
+                           <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="copyright">
+                     <p>BLANCO © 2024</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+
+
+
+   <!-- Mobile menu  -->
+
+   <div class="overlay" data-overlay></div>
+   <div id="mobile-menu" class="mobile-menu">
+      <div class="wrap">
+         <a href="" class="close-trigger" close-button>
+            <i class="fa-solid fa-xmark"></i>
+         </a>
+         <div class="main-menu scrollto">
+            <nav class="wrapper">
+               <ul>
+                  <li><a href=""><span>HOME</span></a></li>
+                  <li class="has-child"><a href="">
+                        <span>КАТАЛОГ</span>
+                        <span class="child-trigger"><i class="fa-solid fa-angle-down"></i></span>
+                     </a>
+                     <ul class="sub-menu list-block">
+                        <li><a href="#">Костюми</a></li>
+                        <li><a href="#">Худі</a></li>
+                        <li><a href="#">Світшоти</a></li>
+                        <li><a href="#">Джогери</a></li>
+                        <li><a href="#">Футболка однотонна</a></li>
+                        <li><a href="#">Футболка патріотична</a></li>
+                        <li><a href="#">Шорти</a></li>
+                        <li><a href="#">Топи</a></li>
+                     </ul>
+                  </li>
+                  <li class="has-child">
+                     <a href="">
+                        <span>ПОКУПЦЯМ</span>
+                        <span class="child-trigger"><i class="fa-solid fa-angle-down"></i></span>
+                     </a>
+                     <ul class="sub-menu list-block">
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Доставка та оплата</a></li>
+                        <li><a href="#">Повернення та обмін</a></li>
+                     </ul>
+                  </li>
+                  <li><a href=""><span>SALE</span></a></li>
+               </ul>
+            </nav>
+            <div class="button">
+               <a href="" class="secondary-btn">Login</a>
+               <a href="" class="primary-btn">Register</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- Boxes  -->
+
+
+   <div id="data-cart" class="cart-menu">
+      <div class="wrap">
+         <a href="#0" class="close-trigger"><i class="fa-solid fa-xmark"></i></a>
+         <div class="scrollto cart-outer">
+            <div class="wrapper">
+               <div class="cart-list">
+                  <div class="wrapper">
+                     <div class="cart-header">
+                        <h2>Shopping cart</h2>
+                     </div>
+                     <div class="cart-body">
+                        <div class="product-list scrollto">
+                           <div class="wrapper">
+                              <ul>
+                                 <li>
+                                    <div class="grouping">
+                                       <div class="quantity">
+                                          <div class="control">
+                                             <button>-</button>
+                                             <input type="text" value="1">
+                                             <button>+</button>
+                                          </div>
+                                       </div>
+                                       <div class="thumbnail">
+                                          <a href="">
+                                             <img src="img/assets/product_01.jpg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="variats">
+                                       <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
+                                       <div class="color grey-color">
+                                          <span>Color:</span>
+                                          <span>Tosca:</span>
+                                       </div>
+                                       <div class="size grey-color">
+                                          <span>Size:</span>
+                                          <span>L</span>
+                                       </div>
+                                       <div class="price">$45.00</div>
+                                       <a href="" class="item-remove">
+                                          <i class="fa-solid fa-xmark"></i>
+                                       </a>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="grouping">
+                                       <div class="quantity">
+                                          <div class="control">
+                                             <button>-</button>
+                                             <input type="text" value="1">
+                                             <button>+</button>
+                                          </div>
+                                       </div>
+                                       <div class="thumbnail">
+                                          <a href="">
+                                             <img src="img/assets/product_01.jpg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="variats">
+                                       <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
+                                       <div class="color grey-color">
+                                          <span>Color:</span>
+                                          <span>Tosca:</span>
+                                       </div>
+                                       <div class="size grey-color">
+                                          <span>Size:</span>
+                                          <span>L</span>
+                                       </div>
+                                       <div class="price">$45.00</div>
+                                       <a href="" class="item-remove">
+                                          <i class="fa-solid fa-xmark"></i>
+                                       </a>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="grouping">
+                                       <div class="quantity">
+                                          <div class="control">
+                                             <button>-</button>
+                                             <input type="text" value="1">
+                                             <button>+</button>
+                                          </div>
+                                       </div>
+                                       <div class="thumbnail">
+                                          <a href="">
+                                             <img src="img/assets/product_01.jpg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="variats">
+                                       <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
+                                       <div class="color grey-color">
+                                          <span>Color:</span>
+                                          <span>Tosca:</span>
+                                       </div>
+                                       <div class="size grey-color">
+                                          <span>Size:</span>
+                                          <span>L</span>
+                                       </div>
+                                       <div class="price">$45.00</div>
+                                       <a href="" class="item-remove">
+                                          <i class="fa-solid fa-xmark"></i>
+                                       </a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cart-footer">
+                        <div class="discount">
+                           <form action="">
+                              <input type="" class="input" placeholder="Coupon">
+                              <input type="submit" class="submit" value="Apply">
+                           </form>
+                        </div>
+                        <div class="math-pricing">
+                           <ul>
+                              <li>
+                                 <span>Subtotal</span>
+                                 <span class="value"></span>
+                              </li>
+                              <ul>
+                                 <li><span>Shipping</span></li>
+                                 <li>
+                                    <div>
+                                       <input type="radio" class="checker" name="shipping">
+                                       <label for="">Free</label>
+                                    </div>
+                                    <span class="value">$0.00</span>
+                                 </li>
+                                 <li>
+                                    <div>
+                                       <input type="radio" class="checker" name="shipping">
+                                       <label for="">Flat</label>
+                                    </div>
+                                    <span class="value">$147.00</span>
+                                 </li>
+                              </ul>
+                              <li>
+                                 <span>Promo discount</span>
+                                 <span class="value">- $0.00</span>
+                              </li>
+                              <li class="total">
+                                 <span>Total</span>
+                                 <span class="value">$147.00</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="button">
+                           <a href="" class="secondary-btn">Checkout</a>
+                           <a href="" class="grey-link">Viev Cart</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Baners  -->
+
+
+
+
+   <!-- Store Filter Сatalog  -->
+
+
+
+
+
+   <!-- About  -->
+
+
+
+   <!-- Delivery and payment  -->
+
+
+
+
+   <!-- Returns and Exchanges  -->
+
+
+
+
+
+   <!-- Contact  -->
+
+*/
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
+
+</body>
+
+</html>
